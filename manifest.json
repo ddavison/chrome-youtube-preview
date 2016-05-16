@@ -1,0 +1,46 @@
+{
+  "name": "YouTube Previewer",
+  "short_name": "Previewer for YouTube",
+  "description": "Preview YouTube videos",
+  "author": "ddavison",
+  "homepage_url": "https://github.com/ddavison/chrome-youtube-previewer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "YouTube Previewer",
+    "default_icon": {
+      "512": "assets/images/previewer-logo-512.png"
+    }
+  },
+
+  "background": {
+    "scripts": ["assets/js/background.js"]
+  },
+
+  "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "assets/js/background.js" ],
+    "matches": [ "*://*.youtube.com/*" ],
+    "run_at": "document_end"
+  },{
+    "all_frames": true,
+    "css": [ "assets/css/background.css"],
+    "matches": [ "*://*.youtube.com/*" ]
+  } ],
+
+  "web_accessible_resources": [
+    "assets/images/*.png"
+  ],
+
+
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "storage",
+    "contextMenus"
+  ],
+
+  "icons": {
+    "512": "assets/images/previewer-logo-512.png"
+  }
+}

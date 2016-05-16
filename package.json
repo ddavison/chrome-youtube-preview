@@ -1,0 +1,38 @@
+{
+  "name": "YouTube Preview",
+  "version": "1.0.0",
+  "description": "Preview YouTube videos",
+  "main": "Gruntfile.coffee",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddavison/chrome-youtube-preview.git"
+  },
+  "author": [
+    "Daniel Davison <sircapsalot@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddavison/chrome-youtube-preview/issues"
+  },
+  "homepage": "https://github.com/ddavison/chrome-youtube-preview",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-notify": "*",
+    "grunt-sass": "*",
+    "grunt-reload-chrome": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-shell": "*",
+    "haml-coffee": "*"
+  }
+}

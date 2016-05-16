@@ -1,0 +1,51 @@
+#youtube-previewer {
+  padding: 10px;
+  background-color: #eeeeee;
+  border: 1px solid firebrick;
+
+  //width: 600px;
+  //height: 400px;
+
+  z-index: 2;
+
+  #ytp-header {
+    //border-bottom: 1px solid firebrick;
+    height: 30px;
+
+    img.logo {
+      height: 30px;
+      width: 30px;
+    }
+
+    #ytp-logo-text {
+      float: right;
+      font-size: 12px;
+      font-weight: bold;
+      word-wrap: break-word;
+    }
+  }
+
+  #ytp-content {
+    margin-top: 10px;
+
+    #ytp-video-thumbnail {
+      float: right;
+    }
+
+    #ytp-video-stat-likes {
+      color: #167ac6;
+    }
+
+    #ytp-video-stat-dislikes {
+      color: #ccc;
+    }
+  }
+
+  #ytp-loading {
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+    background-color: transparent;
+    visibility: hidden;
+  }
+}

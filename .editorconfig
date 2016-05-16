@@ -1,0 +1,3 @@
+[*.jade,*.js,*.html,*.coffee,*.scss,*.css,*.json,*.yml]
+indent_size = 2
+indent_style = space
